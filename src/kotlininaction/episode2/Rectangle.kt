@@ -7,6 +7,11 @@ class Rectangle( val height: Int, val width : Int){
     get(){ // 프로퍼티 게터 선언
         return height == width
     }
+
+    val isNotSquare : Boolean
+    get(){
+        return height != width
+    }
 }
 
 fun createRandomRectangle():Rectangle{
